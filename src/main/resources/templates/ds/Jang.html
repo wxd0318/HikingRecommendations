@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>장산 정보 보기</title>
+        <link th:href="@{/css/styles.css}" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+
+        <th:block th:replace="~{/layout/basic :: setContent(~{this::content})}">
+            <th:block th:fragment="content">
+
+            <!-- Page Content-->
+        <div class="container px-4 px-lg-5">
+            <!-- Heading Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="/img/JA/201712061432463517.png" alt="..." /></div>
+                <div class="col-lg-5">
+                    <h1 class="font-weight-light">장산 추천 코스</h1>
+                    <p>장산의 정상은 해발 634m입니다 가장 빨리 올라가기 원한다면 성불사에서 출발하는 것을 추천합니다</p>
+                    <p>코스경로: 성불사 -> 촛대바위-> 선바위 -> 정상</p>
+                    <p>거리 및 시간: 4.54km, 약 2시간 30분</p>
+                    <h4>주변 대중교통</h4>
+                    <h5>버스</h5>
+                    <p>올림픽교차로 - 31, 39, 40, 63, 100, 100-1, 115-1, 141, 181, 200</p>
+                    <h5>지하철</h5>
+                    <p>벡스코역 - 2호선</p>
+
+                </div>
+            </div>
+            <h1>갤러리</h1>
+<hr>
+            <!-- Content Row-->
+            <div class="row gx-5 gx-lg-5">
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">바다</h3>
+                            <img class="card-img" src="/img/JA/바다.jfif" alt="..." />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body"> 
+                            <h3 class="card-title">바다와도시</h3>
+                            <img class="card-img" src="/img/JA/바다와도시.jfif" alt="..." />
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">안개 낀 장산</h3>
+                                <img class="card-img" src="/img/JA/안개.jpg" alt="..." />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100">
+                            <div class="card-body">                               
+                                <h3 class="card-title">야경</h3>
+                                <img class="card-img" src="/img/JA/야경.jfif" alt="..." />
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-md-4 mb-5">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title">양운폭포</h3>
+                                    <img class="card-img" src="/img/JA/양운폭포.jfif" alt="..." />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <div class="card h-100">
+                                <div class="card-body">                                   
+                                    <h3 class="card-title">대천공원</h3>
+                                    <img class="card-img" src="/img/JA/대천공원.jfif" alt="..." />
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+            </th:block>
+        </th:block>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

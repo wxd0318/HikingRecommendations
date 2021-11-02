@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>백양산 정보 보기</title>
+        <link th:href="@{/css/styles.css}" rel="stylesheet">
+    </head>
+    <body>
+
+    <th:block th:replace="~{/layout/basic :: setContent(~{this::content})}">
+        <th:block th:fragment="content">
+        <div class="container px-4 px-lg-5">
+            <!-- Heading Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="/img/BY/ds.jpg" alt="..." /></div>
+                <div class="col-lg-5">
+                    <h1 class="font-weight-light">백양산 추천 코스</h1>
+                    <p>백양산의 정상은 해발 641m입니다. 정상까지 가장 빨리 올라가기 원한다면 운수사에서 출발하는 것을 추천합니다</p>
+                    <p>코스경로: 운수사 -> 애진봉 -> 정상</p>
+                    <p>거리 및 시간: 4km, 약 2시간</p>
+                    <h4>주변 대중교통</h4>
+                    <h5>버스</h5>
+                    <p>운수사입구 - 31, 148, 338</p>
+                </div>
+            </div>
+            <h1>갤러리</h1>
+<hr>
+            <!-- Content Row-->
+            <div class="row gx-5 gx-lg-5">
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">운수사 계곡</h3>
+                            <img class="card-img" src="/img/BY/운수사.jfif" alt="..." />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body"> 
+                            <h3 class="card-title">애진봉 철쭉</h3>
+                            <img class="card-img" src="/img/BY/애진봉 철쭉.jfif" alt="..." />
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">정상</h3>
+                                <img class="card-img" src="/img/BY/정상.jpg" alt="..." />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100">
+                            <div class="card-body">                               
+                                <h3 class="card-title">산과 도시</h3>
+                                <img class="card-img" src="/img/BY/산과도시.jpg" alt="..." />
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-md-4 mb-5">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title">산, 도시, 바다</h3>
+                                    <img class="card-img" src="/img/BY/산, 도시, 바다.jfif" alt="..." />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <div class="card h-100">
+                                <div class="card-body">                                   
+                                    <h3 class="card-title">낙동강</h3>
+                                    <img class="card-img" src="/img/BY/낙동강.jfif" alt="..." />
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+        </th:block>
+    </th:block>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

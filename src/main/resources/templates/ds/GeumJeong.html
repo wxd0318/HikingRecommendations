@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>금정산 정보 보기</title>
+        <link th:href="@{/css/styles.css}" rel="stylesheet">
+    </head>
+    <body>
+
+    <th:block th:replace="~{/layout/basic :: setContent(~{this::content})}">
+        <th:block th:fragment="content">
+        <div class="container px-4 px-lg-5">
+            <!-- Heading Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="/img/GJ/금정길.jpg" alt="..." /></div>
+<!--                                           src="../../static/img/GJ/금정길.jpg" -->
+
+                <div class="col-lg-5">
+                    <h1 class="font-weight-light">금정산 추천 코스</h1>
+                    <p>금정산의 최고봉은 해발 801m의 고당봉입니다. 고당봉까지 가장 빨리 올라가기 원한다면 범어사에서 출발하는 것을 추천합니다</p>
+                    <p>코스경로: 범어사 -> 북문 -> 고당봉 -> 극락골 -> 범어사</p>
+                    <p>거리 및 시간: 6.03km, 약 2시간</p>
+                    <h4>주변 대중교통</h4>
+                    <h5>버스</h5>
+                    <p>범어사 매표소 - 90</p>
+                </div>
+            </div>
+            <h1>갤러리</h1>
+<hr>
+            <!-- Content Row-->
+            <div class="row gx-5 gx-lg-5">
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">범어사</h3>
+                            <img class="card-img" src="/img/GJ/범어사.jpg" alt="..." />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body"> 
+                            <h3 class="card-title">금정산성</h3>
+                            <img class="card-img" src="/img/GJ/120px-금정산성.jpg" alt="..." />
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">금정산성 성벽</h3>
+                                <img class="card-img" src="/img/GJ/160px-Geumjeong_fortress1.jpg" alt="..." />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100">
+                            <div class="card-body">                               
+                                <h3 class="card-title">금정산성 북문</h3>
+                                <img class="card-img" src="/img/GJ/금정산_북문.jpg" alt="..." />
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-md-4 mb-5">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title">금샘</h3>
+                                    <img class="card-img" src="/img/GJ/160px-Geumsaem.jpg" alt="..." />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <div class="card h-100">
+                                <div class="card-body">                                   
+                                    <h3 class="card-title">고당봉</h3>
+                                    <img class="card-img" src="/img/GJ/금정산_(1).jpg" alt="..." />
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
+        </footer>
+        </th:block>
+    </th:block>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

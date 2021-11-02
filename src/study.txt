@@ -1,0 +1,92 @@
+프로젝트 생성 후 초기 기본 설정
+
+1. 메인 메소드 재시작 없이 소스코드 적용하기
+    1) 우측 상단에서 프로젝트명Application 클릭
+    2) Edit Configurations... 클릭
+    3) Running Application Update Policies
+        - On 'Update' action: Update classes and resources
+        - On frame deactivation: Update classes and resources
+
+2. symbol 에러 해결 방안
+    1) File | Settings | Build, Execution, Deployment | Build Tools | Gradle
+        Build and run
+         - build and run using: IntelliJ IDEA
+         - Run tests using: IntelliJ IDEA
+
+3. build.gradle 의존성 추가
+    1) 데이터베이스 드라이버 의존성 추가
+        // https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client
+        implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.7.4'
+    2) thymeleaf에서 시간 관련 기능 사용을 위한 의존성 추가
+        // https://mvnrepository.com/artifact/org.thymeleaf.extras/thymeleaf-extras-java8time
+        implementation group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-java8time', version: '3.0.4.RELEASE'
+
+4. application.properties 설정
+    server.port=8081 // 포트 번호 변경
+
+    spring.datasource.driver-class-name=org.mariadb.jdbc.Driver // jdbc 드라이버 경로
+    spring.datasource.url=jdbc:mariadb://localhost:3307/bootex // db 주소
+    spring.datasource.username=bootuser // db 계정
+    spring.datasource.password=12341234 // db 패스워드
+
+    spring.jpa.hibernate.ddl-auto=update // 프로젝트 실행 시 자동으로 DDL(테이블 생성, 수정, 삭제 등)을 생성할 것인지를 결정, update는 테이블 변경이 필요한 경우 alter로 테이블 변경, 테이블이 없다면 create로 테이블 생성
+    spring.jpa.properties.hibernate.format_sql=true // 실제 JPA의 구현체인 Hibernate가 동작하면서 발생하는 SQL을 포맷팅해서 출력
+    spring.jpa.show-sql=true // JPA 처리 시에 발생하는 SQL을 콘솔창에서 보여 줄 것인지 설정
+
+    spring.thymeleaf.cache=false // Thymeleaf 역시 JSP처럼 서버에서 결과를 만들어서 브라우저로 전송, 이미 만들어진 결과를 서버에서 계속 보관할 것인지에 대한 설정
+
+------------------------------------------------------------------------------------------------------------------------
+
+DI(의존성 종속, Dependency Injection)란, 클래스간의 의존관계를 스프링 컨테이너가 자동으로 연결해주는 것
+출처 : https://life-with-coding.tistory.com/433
+
+IntStream
+출처 : https://m.blog.naver.com/myca11/221386518751
+
+관계형 데이터베이스에서 조인(join)이란?
+출처 : https://advenoh.tistory.com/23
+
+SpringBoot Test - Junit 설정 및 실행
+출처 : https://goddaehee.tistory.com/210
+
+------------------------------------------------------------------------------------------------------------------------
+
+- JPA(Java Persistence API): JPQL을 분석한 후 적절한 SQL을 만들어 데이터베이스를 조회
+- JPQL(Java Persistence Query Language): 테이블이 아닌 엔티티 객체를 대상으로 검색하는 객체지향 쿼리
+
+------------------------------------------------------------------------------------------------------------------------
+
+File | Settings | Editor | Inspections 에서 thymeleaf 검색 후 모두 체크 해제
+Cannot resolve 'pageRequestDTO', Cannot resolve 'type' 등 빨간줄 해결법
+
+------------------------------------------------------------------------------------------------------------------------
+
+전통적인 Spring MVC의 컨트롤러인 @Controller는 주로 View를 반환하기 위해 사용
+@RestController은 Json 형태로 객체 데이터를 반환, View가 필요 없을 경우 사용
+
+출처 : https://mangkyu.tistory.com/49
+
+------------------------------------------------------------------------------------------------------------------------
+
+MediaType이란?
+출처 : https://pozafly.github.io/spring/MediaType/
+
+REST API 제대로 알고 사용하기
+출처 : https://meetup.toast.com/posts/92
+
+ResponseEntity란 무엇인가?
+출처 : https://devlog-wjdrbs96.tistory.com/182
+
+[Spring Boot] 클라이언트 REST API 응답보내기
+출처 : https://devlog-wjdrbs96.tistory.com/197?category=882974
+
+SpringBoot Controller, Service, DAO 이해 - Service(1)
+https://onlyformylittlefox.tistory.com/13
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------
