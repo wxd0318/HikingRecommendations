@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<th:block th:replace="~{/layout/basic :: setContent(~{this :: content})}">
+<th:block th:replace="~{layout/basic :: setContent(~{this :: content})}">
     <th:block th:fragment="content">
         <h1 class="mt-4">게시판 수정</h1>
         <form action="/board2/modify2" method="post">

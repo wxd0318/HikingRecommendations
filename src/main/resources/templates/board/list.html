@@ -5,7 +5,7 @@
     <title>자유 게시판</title>
 </head>
 <body>
-    <th:block th:replace="~{/layout/basic :: setContent(~{this::content})}">
+    <th:block th:replace="~{layout/basic :: setContent(~{this::content})}">
         <th:block th:fragment="content">
             <h1 class="mt-4">자유 게시판
                 <span>
@@ -49,7 +49,7 @@
                 <tr th:if="${dto.bSel} == '자유 게시판'" th:each="dto : ${result.dtoList}">
 
                     <th>
-                        <a th:href="@{/board/read(bno = ${dto.bno}, page=${result.page},
+                        <a th:href="@{board/read(bno = ${dto.bno}, page=${result.page},
                         type=${pageRequestDTO.type}, keyword = ${pageRequestDTO.keyword})}">[[${dto.title}]]  </a>
                         [<b th:text="${dto.replyCount}"></b>]
                     </th>

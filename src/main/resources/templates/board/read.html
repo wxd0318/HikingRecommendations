@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-    <th:block th:replace="~{/layout/basic :: setContent(~{this::content})}">
+    <th:block th:replace="~{layout/basic :: setContent(~{this::content})}">
         <th:block th:fragment="content">
             <h1 class="mt-4">게시판 조회</h1>
 
