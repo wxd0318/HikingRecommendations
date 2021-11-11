@@ -12,7 +12,7 @@ import org.zerock.board.service.ReplyService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/replies/")
+@RequestMapping("replies/")
 @Log4j2
 @RequiredArgsConstructor
 public class ReplyController {

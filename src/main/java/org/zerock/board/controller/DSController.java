@@ -6,30 +6,30 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
-@RequestMapping("/ds")
+@RequestMapping("ds")
 @Log4j2
 public class DSController {
-    @GetMapping("/main")
+    @GetMapping("main")
     public void main() {
         log.info("main.......");
     }
 
-    @GetMapping("/Jang")
+    @GetMapping("Jang")
     public void Jang() {
         log.info("Jang........");
     }
 
-    @GetMapping("/BaekYang")
+    @GetMapping("BaekYang")
     public void BaekYang() {
         log.info("BaekYang.......");
     }
 
-    @GetMapping("/GeumJeong")
+    @GetMapping("GeumJeong")
     public void GeumJeong() {
         log.info("GeumJeong........");
     }
 
-    @GetMapping("/GeumRyeon")
+    @GetMapping("GeumRyeon")
     public void GeumRyeon() { log.info("GeumRyeon.......");}
 
 
