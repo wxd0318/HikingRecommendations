@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Company</title>
+
+    <!-- 반응형 웹 만들기 -->
+    <!-- 1. 모바일용 css -->
+    <!--<link rel="stylesheet" href="/static/company_mobile.css" media="(max-width:600px)">-->
+
+    <!-- 2. 데스크탑용 외부 스타일시트 적용 -->
+    <link rel="stylesheet" th:href="@{/css/company.css}">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        /*img {*/
+        /*    max-width: 100%;*/
+        /*}*/
+        .top_me {
+            width: 100%;
+            height: 10%;
+            background-color: #0b2e13;
+        }
+    </style>
+</head>
+<body>
+
+<!--<div id="page">-->
+    <header>
+<!--        <div id="logo">-->
+            <!--es><img th:src="@{/img/company/001.png}" alt="Logo"></es-->
+<!--        </div>-->
+        <div class="top_menu">
+            <a href="http://localhost:8081/ds/main2">HOMEㅣ</a>
+            <a href="http://localhost:8081/board/list">자유게시판ㅣ</a>
+            <a href="http://localhost:8081/board2/list2">등산게시판ㅣ</a>
+            <a href="">JOIN</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://localhost:8081/ds/GeumJeong">금정산</a></li>
+                <li><a href="http://localhost:8081/ds/Jang">장산</a></li>
+                <li><a href="http://localhost:8081/ds/BaekYang">백양산</a></li>
+                <li><a href="http://localhost:8081/ds/GeumRyeon">금련산</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!--    <article id="content">-->
+<!--        <section id="main">-->
+            <div>
+                <img class="article_width" th:src="@{/img/company/restmb_idxmake.jpg}" alt="banner1">
+            </div>
+<!--        </section>-->
+<!--    </article>-->
+
+    <footer>
+        <h1>Copyright © Your Website 2021</h1>
+        <p>02)5959-1004</p>
+    </footer>
+<!--</div>-->
+</body>
+</html>

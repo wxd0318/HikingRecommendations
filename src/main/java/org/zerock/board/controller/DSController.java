@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("ds")
 @Log4j2
 public class DSController {
-    @GetMapping("main")
+    @GetMapping("main2")
     public void main() {
         log.info("main.......");
     }
